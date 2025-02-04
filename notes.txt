@@ -1,0 +1,5 @@
+1.npm init -y
+2.npm i express
+3.create index.js
+
+1.index.js
