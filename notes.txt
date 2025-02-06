@@ -3,3 +3,4 @@
 3.create index.js
 
 1.index.js
+npm run dev
