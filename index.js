@@ -3,14 +3,14 @@
 
 const express = require("express");
 const app = express();
-
+const cors = require("cors");
 //load config from env file
 require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 
 //middleware to parse json request body
 app.use(express.json());
-
+app.use(cors());
 //import routes for TODO API
 const todoRoutes = require("./routes/todos");
 
