@@ -10,6 +10,14 @@ exports.createTodo = async(req,res) => {
             //create a new Todo Obj and insert in DB
             const response = await Todo.create({title,description});
             //send a json response with a success flag
+
+
+            //or another methode save
+            // const newTodo = new Todo({
+            //     title: req.body.title,
+            //   });
+            //   const savedTodo = await newTodo.save();
+            //   res.status(201).json(savedTodo);
             res.status(200).json(
                 {
                     success:true,
